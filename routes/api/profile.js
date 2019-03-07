@@ -228,7 +228,7 @@ router.delete('/experience/:exp_id', passport.authenticate('jwt', {session: fals
 // @route    DELETE api/profile/education/:edu_id
 // @desc     delete education from profile
 // @access   Private
-router.delete('/education/:exp_id', passport.authenticate('jwt', {session: false}), (req, res) => {
+router.delete('/education/:edu_id', passport.authenticate('jwt', {session: false}), (req, res) => {
 
   Profile.findOne({user: req.user.id})
     .then(profile => {
