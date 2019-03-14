@@ -51,6 +51,7 @@ class CreateProfile extends Component {
       profile.twitter = !isEmpty(profile.social.twitter) ? profile.social.twitter : '';
       profile.facebook = !isEmpty(profile.social.facebook) ? profile.social.facebook : '';
       profile.youtube = !isEmpty(profile.social.youtube) ? profile.social.youtube : '';
+      profile.linkedin = !isEmpty(profile.social.linkedin) ? profile.social.linkedin : '';
       profile.instagram = !isEmpty(profile.social.instagram) ? profile.social.instagram : '';
 
       this.setState({
@@ -114,7 +115,7 @@ class CreateProfile extends Component {
 
           <InputGroup
             placeholder="Facebook Page URL"
-            name="twitter"
+            name="facebook"
             icon="fab fa-facebook"
             value={this.state.facebook}
             onChange={this.onChange}
@@ -123,7 +124,7 @@ class CreateProfile extends Component {
 
           <InputGroup
             placeholder="Linkedin Profile URL"
-            name="twitter"
+            name="linkedin"
             icon="fab fa-linkedin"
             value={this.state.linkedin}
             onChange={this.onChange}
@@ -132,7 +133,7 @@ class CreateProfile extends Component {
 
           <InputGroup
             placeholder="Youtube Profile URL"
-            name="twitter"
+            name="youtube"
             icon="fab fa-youtube"
             value={this.state.youtube}
             onChange={this.onChange}
@@ -141,7 +142,7 @@ class CreateProfile extends Component {
 
           <InputGroup
             placeholder="Instagram Profile URL"
-            name="twitter"
+            name="instagram"
             icon="fab fa-instagram"
             value={this.state.instagram}
             onChange={this.onChange}
