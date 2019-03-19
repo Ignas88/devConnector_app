@@ -22,6 +22,9 @@ class Navbar extends Component {
           <Link className="nav-link" to="/dashboard">Dashboard</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="/feed">Post feed</Link>
+        </li>
+        <li className="nav-item">
           <a href="" className="nav-link" onClick={this.onLogoutClick}>
             <img className="rounded-circle"
               src={user.avatar} alt={user.name}
